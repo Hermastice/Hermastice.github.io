@@ -27,12 +27,26 @@
 </a>
 </div>
 <div style="background-color: #7D684D; text-align: center; max-width: 50%; margin: 0 auto; border: 6px solid #372219;">
-  <font size="+12"> Click here for Herm Directory!</font> 
+  <font id="text-container" size="+12"> !</font> 
 <a href="herm.html"> 
 <div style="text-align: center; margin: 0 auto;">
 <img src="HermBase.png" alt="Herm Repository!" style="width:50%">
 </div>
 </a>
 </div>
+<script>
+  var text = new Array("Click here for Herm Repository!", "Click here for Herm Suppository!", "Click here for Herm Repository!", "Click here for Herm Repository!""Click here for Herm Repository!", "Click here for Herm Repository!""Click here for Herm Repository!", "Click here for Herm Repository!""Click here for Herm Repository!", "Click here for Herm Repository!""Click here for Herm Repository!", "Click here for Herm Repository!");
+
+function addImage() {
+  var index = Math.floor(Math.random() * images.length); 
+  var txt = text[index];
+  var container = document.getElementById("text-container").innerText=txt;
+}
+
+
+addText();
+
+</script>
+
 </body>
 </html>
