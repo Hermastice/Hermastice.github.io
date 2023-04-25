@@ -1,0 +1,10 @@
+  img{
+  margin: 30px 60px;
+  }
+        body {
+            background-image: url('peter.png');
+ 		background-repeat: no-repeat;
+		background-size: cover;
+            background-attachment: fixed;
+
+        }
