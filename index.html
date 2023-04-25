@@ -35,11 +35,16 @@
 </a>
 </div>
 <script>
-  var texts = new Array("Click here for Herm Repository!", "Click here for Herm Suppository!", "Click here for Herm Repository!", "Click here for Herm Repository!", "Click here for Herm Repository!", "Click here for Herm Repository!", "Click here for Herm Repository!", "Click here for Herm Repository!", "Click here for Herm Repository!", "Click here for Herm Repository!");
+  var texts = new Array("Click here for Herm Repository!", "Click here for Herm Suppository!");
 
   function addText() {
-    var index = Math.floor(Math.random() * texts.length); 
-    var newText = texts[index];
+    var index = Math.floor(Math.random() * 15); 
+    if(index>=13){
+	  var newText = texts[0];
+    }
+    else{
+	var newText = texts[1];  
+    }
     document.getElementById("text-container").innerText = newText;
   }
 
