@@ -10,6 +10,10 @@
             var theme = this.value;
             document.body.className = theme;
 	    localStorage.setItem('selectedTheme', theme);
+	    var selectedTheme = localStorage.getItem('selectedTheme');
+	    if (selectedTheme) {
+  	    document.body.className = selectedTheme;
+	    }
         });
     </script>
 
@@ -65,10 +69,6 @@
 
 </script>
 <script>
-var selectedTheme = localStorage.getItem('selectedTheme');
-if (selectedTheme) {
-    document.body.className = selectedTheme;
-}
 </script>
 </body>
 </html>
