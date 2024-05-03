@@ -67,6 +67,7 @@
 	    var selectedTheme = localStorage.getItem('selectedTheme');
 	    if (selectedTheme) {
   	    document.body.className = selectedTheme;
+            document.getElementById('theme-selector').value = selectedTheme;
 	    }
 	    var characters = new Array("sheldon.png", "mussolini.gif", "omoriboy.png");
 		    if(selectedTheme == "theme1"){
