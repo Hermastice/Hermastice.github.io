@@ -62,6 +62,8 @@
             var theme = this.value;
             document.body.className = theme;
 	    localStorage.setItem('selectedTheme', theme);
+	location.reload()
+        });
 	    var selectedTheme = localStorage.getItem('selectedTheme');
 	    if (selectedTheme) {
   	    document.body.className = selectedTheme;
@@ -80,7 +82,6 @@
 	    	        document.getElementById("hello").src=character;
 		    }
 
-	location.reload()
         });
 
 </script>
