@@ -62,12 +62,12 @@
             var theme = this.value;
             document.body.className = theme;
 	    localStorage.setItem('selectedTheme', theme);
-	    var selectedTheme = localStorage.getItem('selectedTheme');
 
         });
     </script>
 <script>
-		    if (selectedTheme) {
+	    var selectedTheme = localStorage.getItem('selectedTheme');
+	    if (selectedTheme) {
   	    document.body.className = selectedTheme;
 	    }
 	    var characters = new Array("sheldon.png", "mussolini.gif", "omoriboy.png");
