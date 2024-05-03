@@ -63,7 +63,11 @@
             document.body.className = theme;
 	    localStorage.setItem('selectedTheme', theme);
 	    var selectedTheme = localStorage.getItem('selectedTheme');
-	    if (selectedTheme) {
+
+        });
+    </script>
+<script>
+		    if (selectedTheme) {
   	    document.body.className = selectedTheme;
 	    }
 	    var characters = new Array("sheldon.png", "mussolini.gif", "omoriboy.png");
@@ -80,7 +84,6 @@
             document.getElementById("hello").src=character;
 	    }
 
-        });
-    </script>
+</script>
 </body>
 </html>
