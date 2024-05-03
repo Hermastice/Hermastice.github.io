@@ -1,20 +1,20 @@
   img{
   margin: 30px 60px;
   }
-        body {
-        .theme1 {     
+        
+        body.theme1 {     
 	background-image: url('where-did-the-griffins-went-wrong-answers-only-v0-eejd8vk3qzhb1.png');
 	
 	}	
-        .theme2 {     
+        body.theme2 {     
 	background-image: url('pleaceholder.png');
 	
 	}	
-        .theme3 {     
+        body.theme3 {     
 	background-image: url('blerm.png');
 	
 	}	
-		
+	body{	
  		background-repeat: no-repeat;
 		background-size: cover;
             background-attachment: fixed;
