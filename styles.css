@@ -2,7 +2,19 @@
   margin: 30px 60px;
   }
         body {
-            background-image: url('where-did-the-griffins-went-wrong-answers-only-v0-eejd8vk3qzhb1.png');
+        .theme1 {     
+	background-image: url('where-did-the-griffins-went-wrong-answers-only-v0-eejd8vk3qzhb1.png');
+	
+	}	
+        .theme2 {     
+	background-image: url('pleaceholder.png');
+	
+	}	
+        .theme3 {     
+	background-image: url('blerm.png');
+	
+	}	
+		
  		background-repeat: no-repeat;
 		background-size: cover;
             background-attachment: fixed;
