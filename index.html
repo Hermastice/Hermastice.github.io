@@ -19,7 +19,7 @@
   <font size="+12"> Welcome to Herm's Website!</font> 
 
 <div style="text-align: center; margin: 0 auto;">
-<img src="sheldon.png" style="width:50%">
+<img id="hello" src="sheldon.png" style="width:50%">
 </div>
 
 </div>
@@ -65,6 +65,16 @@
 	    var selectedTheme = localStorage.getItem('selectedTheme');
 	    if (selectedTheme) {
   	    document.body.className = selectedTheme;
+	    var characters = new Array("sheldon.png", "mussolini.gif", "omoriboy.png");
+	    if(selectedTheme){
+		    if(selectedTheme == "theme1"){
+			    var character = characters[1];
+		    if(selectedTheme == "theme2"){
+			    var character = characters[1];
+		    if(selectedTheme == "theme3"){
+			    var character = characters[1];
+            document.getElementById("hello").src=character;
+	    }
 	    }
         });
     </script>
