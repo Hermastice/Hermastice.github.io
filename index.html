@@ -81,7 +81,7 @@
 			    var character = characters[0];
 		            document.getElementById("hello").src=character;
 			    if(isDiv){
-				document.body.removeChild("humePortal");
+				document.body.removeChild(isDiv);
 			    }
 
 		    }
@@ -89,7 +89,7 @@
 			    var character = characters[1];
 		            document.getElementById("hello").src=character;
 			    if(isDiv){
-				document.body.removeChild("humePortal");
+				document.body.removeChild(isDiv);
 			    }
 		    }
 		    if(selectedTheme == "theme3"){
@@ -115,7 +115,7 @@
 		   humeLink.id='humeLink';
 		   humeLink.href='hume.html';
 		   humeLink.innerHTML = '<img src="Hume.png" alt="Hume Repository!" style="width:50%">'
-		   document.getElementById('humePortal').appendChild('humeLink')
+		   document.getElementById('humePortal').appendChild(humeLink)
 		}
 </script>
 </body>
