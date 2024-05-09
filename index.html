@@ -71,6 +71,7 @@
 	location.reload()
         });
 	    var selectedTheme = localStorage.getItem('selectedTheme');
+	    var isDiv = document.getElementById("humePortal);
 	    if (selectedTheme) {
   	    document.body.className = selectedTheme;
             document.getElementById('theme-selector').value = selectedTheme;
@@ -79,17 +80,43 @@
 		    if(selectedTheme == "theme1"){
 			    var character = characters[0];
 		            document.getElementById("hello").src=character;
+			    if(isDiv){
+				document.body.removeChild("humePortal");
+			    }
+
 		    }
 		    if(selectedTheme == "theme2"){
 			    var character = characters[1];
 		            document.getElementById("hello").src=character;
+			    if(isDiv){
+				document.body.removeChild("humePortal");
+			    }
 		    }
 		    if(selectedTheme == "theme3"){
 			    var character = characters[2];
 	    	        document.getElementById("hello").src=character;
+			if(!isDiv){
+			    var newDiv = document.createElement("div");
+  			    newDiv.id='humePortal';
+			    newDiv.style.backgroundColor = '#95A2A3';
+			    newDiv.style.textAlign= 'center';
+  			    newDiv.style.maxWidth= '50%';
+			    newDiv.style.margin= '0 auto';
+			    newDiv.style.border= '6px solid #3e464d';
+			    document.body.appendChild(newDiv);
+			    addLink();
+			}
+			}
+			
 		    }
 
-
+		function addLink(){
+		   var humeLink = document.createElement("a");
+		   humeLink.id='humeLink';
+		   humeLink.href='hume.html';
+		   humeLink.innerHTML = '<img src="Hume.png" alt="Hume Repository!" style="width:50%">'
+		   document.getElementById('humePortal').appendChild('humeLink')
+		}
 </script>
 </body>
 </html>
